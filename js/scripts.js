@@ -1,20 +1,25 @@
 $(document).ready(function() {
-  $("button#hello").click(function() {
-    $("ul#user").prepend("<li>Hello!</li>");
-    $("ul#webpage").prepend("<li>Why hello there!</li>");
-    $("li").click(function() {
-      $(this).remove();
-      //$('li').css('background-color', 'green');
-    });
+  $("button#meow").click(function() {
+    $("ul#cat").prepend("<li>Meowww!</li>");
   });
 
-  $("button#goodbye").click(function() {
-    $("ul#user").prepend("<li>Goodbye!</li>");
-    $("ul#webpage").prepend("<li>Goodbye, dear user!</li>");
+  $("button#purr").click(function() {
+    $("ul#cat").prepend("<li>Purrrrrrr</li>");
   });
 
-  $("button#stop").click(function() {
-    $("ul#user").prepend("<li>Stop copying me!</li>");
-    $("ul#webpage").prepend("<li>Resistance is futile. You will be assimilated.</li>");
+  $("button#hiss").click(function() {
+    $("ul#cat").prepend("<li>Hissssssss!</li>");
+  });
+
+  $("button#woof").click(function() {
+    $("ul#dog").prepend("<li>Woof! Woof! </li>");
+  });
+
+  $("button#growl").click(function() {
+    $("ul#dog").prepend("<li>GrrrRRRRRrrrrrrr!</li>");
+  });
+
+  $("button#yip").click(function() {
+    $("ul#dog").prepend("<li>Yip yip yip!</li>");
   });
 });
